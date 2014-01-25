@@ -1,0 +1,87 @@
+@import lib/base
+
+.wdg
+	border: 1px solid #E1E1E1 
+	color: #000
+	font-size: 13px  
+	font-family: Helvetica,arial, sans-serif 
+	.wdg__content
+		padding: 10px 3% 
+	table
+		border: none
+		border-spacing: 0
+		border-collapse: collapse 
+		width: 100%
+		td
+			text-align: left
+		.wdg__smalllogotd
+			width: 30px 
+	*
+		margin: 0
+		padding: 0
+	.wdg__header
+		.wdg__smalllogo
+			display: inline-block
+			+s(smalllogo)
+		.wdg__title
+			font-size: 13px 
+			color: #000
+			font-weight: bold
+			line-height: 1.2  
+			display: block
+			padding-left: 10px 
+	.wdg__pic
+		img
+			display: block
+			width: 100%
+			height: auto 
+	.wdg__item
+		margin-top: 10px  
+	.wdg__iteminfo
+		border: 1px solid #e1e1e1
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		padding: 5px 10px
+	.wdg__address
+		font-size: 13px 
+		color: #FD6537 
+		margin-bottom: 5px 
+	.wdg__more
+		font-size: 13px 
+		color: #000 
+	.wdg__bottom
+		border-top: 1px solid #E1E1E1
+		padding: 5px 3%
+		font-size: 12px  
+		.wdg__get
+			text-decoration: none
+			color: #A3A3A3
+			font-size: 12px  
+	.wdg__logo
+		+hidetext
+		+s(logo)
+		display: block
+		float: right
+	.wdg__nav
+		text-align: center
+		margin-top: 10px 
+		height: 15px
+		overflow: hidden
+	.wdg__next,.wdg__prev,.wdg__playpause,.wdg__page
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px 
+		cursor: pointer
+	.wdg__next
+		+s(next)
+	.wdg__playpause
+		+s(pause)
+	.wdg__prev
+		+s(prev)
+	.wdg__page
+		margin-right: 0
+		font-size: 12px 
+		white-space:nowrap 
+		cursor: default
+
+	 

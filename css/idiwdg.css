@@ -1,7 +1,7 @@
 /*done by Coderiver.com.ua */
 * { margin: 0; padding: 0; }
 
-.idiwdg { font-size: 14px; font-family: Helvetica, arial, sans-serif; line-height: 1.4; }
+.idiwdg { font-size: 14px; font-family: Helvetica, arial, sans-serif; line-height: 1.4; min-width: 1020px; }
 .idiwdg * { margin: 0; padding: 0; }
 .idiwdg input[type="submit"], .idiwdg button { cursor: pointer; }
 .idiwdg input[type="submit"]::-moz-focus-inner, .idiwdg button::-moz-focus-inner { padding: 0; border: 0; }

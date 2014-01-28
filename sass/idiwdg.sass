@@ -1,0 +1,477 @@
+/*done by Coderiver.com.ua*/
+@import lib/base
+
+*
+	margin: 0
+	padding: 0
+
+.idiwdg
+	font-size: 14px
+	font-family: Helvetica,arial, sans-serif
+	line-height: 1.4
+
+	// reset
+	*
+		margin: 0
+		padding: 0
+	input[type="submit"],
+	button
+		cursor: pointer
+		&::-moz-focus-inner
+			padding: 0
+			border: 0
+	textarea
+		overflow: auto
+	input, button
+		margin: 0
+		padding: 0
+		border: 0
+	input, textarea, select,button,
+	h1,h2,h3,h4,h5,h6,a,span,a:focus
+		outline: none
+	ul,ol
+		list-style-type: none
+	+iphone
+		*
+			-webkit-text-size-adjust: none
+	table
+		border: none
+		border-spacing: 0
+		border-collapse: collapse
+		width: 100%
+
+	//colors
+	$orange: #ff5e24
+	$dark: #39454d
+	$darken: #2d2d2d
+	$grey: #e1e1e1
+	$grey_darken: #e2e2e2
+	$grey_light: #f4f4f4
+	$grey_dark: #b0b5b8
+
+	// mixins
+	=wrap
+		width: 1000px
+		margin-left: auto
+		margin-right: auto
+
+	// buttons
+	.idiwdg-btn
+		display: inline-block
+		height: 40px
+		line-height: 40px
+		min-width: 120px
+		padding: 0 10px
+		+border-radius(3px)
+		background: $orange
+		font-size: 14px
+		color: #fff
+		text-decoration: none
+		text-align: center
+		cursor: pointer
+		&:hover, &:active
+			color: #fff
+			text-decoration: none
+		&:active
+			position: relative
+			top: 1px
+
+	// layout
+	.idiwdg-layout
+		+clr
+		.idiwdg-l-col1
+			float: left
+			width: 42%
+		.idiwdg-l-col2
+			float: right
+			width: 53.4%
+
+	// header
+	.idiwdg-header
+		height: 100px
+		line-height: 100px
+		background: #fff
+	.idiwdg-header__in
+		+clr
+		+wrap
+	.idiwdg-logo
+		display: inline-block
+		vertical-align: middle
+		a
+			display: block
+			+hidetext
+			+s(logo_lg)
+
+	// hero
+	.idiwdg-hero
+		background: $dark
+		color: #fff
+		padding: 55px 0
+		a
+			color: #fff
+			&:hover
+				color: $orange
+	.idiwdg-hero__in
+		+wrap
+	.idiwdg-hero__heading
+		text-align: center
+		margin-bottom: 65px
+		width: 50%
+		margin-left: auto
+		margin-right: auto
+	.idiwdg-hero__title
+		font-size: 24px
+		margin-bottom: 0.5em
+		font-weight: normal
+		font-style: normal
+	.idiwdg-hero__description
+	.idiwdg-hero__items
+		+clr
+		margin-left: -5%
+	.idiwdg-hero__item
+		float: left
+		width: 20%
+		margin-left: 5%
+	.idiwdg-hero__hotzone
+		color: #fff
+		text-decoration: none
+	.idiwdg-hero__item-img
+		width: 180px
+		height: 160px
+		overflow: hidden
+		margin-bottom: 30px
+		img
+			display: block
+			max-width: 180px
+			min-height: 160px
+			+border-radius(3px)
+	.idiwdg-hero__item-h
+		font-size: 18px
+		margin-bottom: 1em
+		font-weight: normal
+		font-style: normal
+	.idiwdg-hero__item-txt
+		color: $grey_dark
+
+	// main wrapper
+	.idiwdg-page
+		+wrap
+
+	// navigation
+	.idiwdg-nav
+		margin-bottom: 25px
+	.idiwdg-nav__list
+		+clr
+	.idiwdg-nav__item
+		width: 25%
+		float: left
+		text-align: center
+		border: 1px solid $grey
+		border-width: 1px 0 1px 1px
+		+box
+		height: 40px
+		line-height: 38px
+		&:first-child
+			border-width: 1px 0 1px 1px
+			+border-radius(3px 0 0 3px)
+		&:last-child
+			+border-radius(0 3px 3px 0)
+		&.is-active
+			background: $orange
+			border-color: $orange
+			&:hover
+				background: $orange
+				border-color: $orange
+			a
+				color: #fff
+				cursor: default
+		&:hover
+			background: $grey_light
+		a
+			text-decoration: none
+			display: block
+			color: #000
+
+	.idiwdg-pager
+		margin-bottom: 25px
+		+clr
+	.idiwdg-pager__prev
+		float: left
+		display: block
+		+s(idiwdg_arrow)
+		&:hover
+			+s(idiwdg_arrow_h)
+
+	.idiwdg-content
+		margin-bottom: 110px
+	.idiwdg-sidebar
+	.idiwdg-widget
+		+border-radius(3px)
+		border: 1px solid $grey
+		padding: 25px 5px
+	.idiwdg-widget__preview
+		display: block
+		margin-left: auto
+		margin-right: auto
+	.idiwdg-main
+	.idiwdg-main__h
+		margin-bottom: 0.5em
+		font-size: 18px
+		font-weight: normal
+		font-style: normal
+	.idiwdg-main__description
+		margin-bottom: 20px
+		line-height: 1.2
+	.idiwdg-main__buttons
+		margin-top: 20px
+		+clr
+		.idiwdg-btn
+			margin-right: 16px
+
+	.idiwdg-settings
+	.idiwdg-settings__section
+		margin-bottom: 7px
+	.idiwdg-settings__h
+		font-size: 14px
+		font-weight: normal
+		font-style: normal
+		margin-bottom: 0.5em
+	.idiwdg-settings__row
+		margin-bottom: 20px
+		+clr
+		.idiwdg-settings__auth
+			margin-left: 25px
+	.idiwdg-settings__auth
+		color: $darken
+		text-decoration: none
+		&:hover
+			color: $orange
+			text-decoration: none
+
+	// switcher
+	.idiwdg-switch
+		+clr
+		display: inline-block
+		vertical-align: middle
+		+border-radius(3px)
+		border: 1px solid $grey_darken
+	.idiwdg-switch__item
+		float: left
+		height: 40px
+		line-height: 40px
+		color: $darken
+		text-align: center
+		padding: 0 15px
+		+box
+		border-left: 1px solid $grey_darken
+		&:first-child
+			border-left: none
+		&.is-active
+			background: $grey
+			&:hover
+				background: $grey
+				a
+					color: #949798
+					cursor: default
+			a
+				color: #949798
+		&:hover
+			background: $grey_light
+		a
+			display: block
+			color: $darken
+			text-decoration: none
+
+	// naming
+	.idiwdg-settings__naming
+		float: left
+		width: 42.7%
+		height: 38px
+		line-height: 38px
+		padding: 0 15px
+		+border-radius(3px)
+		border: 1px solid $grey_darken
+		margin-right: 10px
+	.idiwdg-settings__naminginput
+		font-size: 14px
+		display: inline-block
+		height: 100%
+		width: 100%
+
+	// type
+	.idiwdg-settings__slideshow
+		position: relative
+		float: right
+		width: 49%
+		height: 38px
+		border: 1px solid #E2E2E2
+		border-radius: 3px
+		position: relative
+		font-size: 13px
+		text-align: right
+	.idiwdg-settings__slideshowlabel
+		position: absolute
+		top: 0
+		left: 15px
+		bottom: 0
+		line-height: 38px
+		padding-r
+		font-size: 14px
+	.idiwdg-settings__slideshowvalue
+		display: inline-block
+		height: 38px
+		line-height: 38px
+		padding-right: 30px
+		font-size: 14px
+	.idiwdg-settings__slideshowarr
+		position: absolute
+		top: 19px
+		right: 10px
+		+s(arr)
+	.idiwdg-settings__slideshowselect
+		position: absolute
+		opacity: 0
+		-webkit-appearance: none
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 2
+		height: 100%
+
+
+	// width
+	.idiwdg-settings__width
+		position: relative
+		width: 40.9%
+		height: 38px
+		line-height: 38px
+		padding: 0 20px
+		+border-radius(3px)
+		border: 1px solid $grey_darken
+		text-align: right
+		&.idiwdg-settings__width_mod
+			float: left
+	.idiwdg-settings__widthlabel1
+		position: absolute
+		top: 0
+		left: 15px
+	.idiwdg-settings__widthlabel2
+		display: inline-block
+		vertical-align: middle
+	.idiwdg-settings__widthinput
+		display: inline-block
+		vertical-align: middle
+		font-size: 14px
+		text-align: right
+		margin-right: 25px
+		width: 40px
+
+	// location
+	.idiwdg-settings__location
+		float: left
+		width: 48.33%
+		margin-right: 10px
+		border: 1px solid #E2E2E2
+		border-radius: 3px
+		position: relative
+		font-size: 13px
+		color: #2D2D2D
+		height: 38px
+		line-height: 40px
+	.idiwdg-settings__locationinput
+		border: none
+		height: 38px
+		line-height: 38px
+		display: block
+		padding: 0 10px
+		width: 70%
+		font-size: 13px
+	.idiwdg-settings__locationicon
+		+s(location)
+		position: absolute
+		right: 10px
+		top: 10px
+		font-size: 13px
+
+	// type
+	.idiwdg-settings__type
+		float: left
+		width: 25%
+		height: 38px
+		border: 1px solid #E2E2E2
+		border-radius: 3px
+		position: relative
+		font-size: 13px
+		margin-right: 10px
+	.idiwdg-settings__typevalue
+		height: 38px
+		line-height: 38px
+		padding-left: 10px
+	.idiwdg-settings__typearr
+		position: absolute
+		top: 19px
+		right: 10px
+		+s(arr)
+	.idiwdg-settings__typeselect
+		position: absolute
+		opacity: 0
+		-webkit-appearance: none
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 2
+		height: 100%
+
+	// square
+	.idiwdg-settings__sq
+		float: left
+		width: 21%
+		height: 38px
+		border: 1px solid #E2E2E2
+		border-radius: 3px
+		position: relative
+		font-size: 13px
+		text-align: right
+	.idiwdg-settings__sqlabel1
+		position: absolute
+		left: 10px
+		top: 0
+		height: 38px
+		line-height: 38px
+	.idiwdg-settings__sqlabel2
+		display: inline-block
+		padding-right: 10px
+	.idiwdg-settings__sqinput
+		border-style: none
+		height: 38px
+		line-height: 38px
+		width: 40px
+		display: inline-block
+		text-align: right
+		padding-right: 5px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

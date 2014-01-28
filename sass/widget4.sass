@@ -1,173 +1,199 @@
 @import lib/base
 
-.wdg
-	border: 1px solid #E1E1E1 
-	color: #000
-	font-size: 13px  
-	font-family: Helvetica,arial, sans-serif
-	&.wdg_xs
-		.wdg__search
-			margin-top: 10px
-	.wdg__content
-		padding: 10px 3% 
-	table
-		border: none
-		border-spacing: 0
-		border-collapse: collapse 
-		width: 100%
-		td
-			text-align: left
-		.wdg__smalllogotd
-			width: 30px 
-	*
-		margin: 0
-		padding: 0
-	.wdg__header
-		.wdg__smalllogo
-			display: inline-block
-			+s(smalllogo)
-		.wdg__title
-			font-size: 13px
-			color: #000
-			font-weight: bold
-			line-height: 1.2
-			display: block
-			padding-left: 10px
-	.wdg__bottom
-		border-top: 1px solid #E1E1E1
-		padding: 10px 3%
-		font-size: 12px
-		.wdg__get
-			text-decoration: none
-			color: #A3A3A3
-			font-size: 12px
-	.wdg__logo
-		+hidetext
-		+s(logo)
-		display: block
-		float: right
-
-	.wdg__form
-		margin-top: 10px
-	.wdg__row
-		margin-top: 10px
-	.wdg__search
-		margin-top: 20px
-		border: none
-		background: #fc6013
-		width: 100%
-		height: 40px
-		+border-radius(3px)
-		color: #fff
-		text-transform: uppercase
-		outline: 0
-		cursor: pointer
-		+hidetext
-		&:active
-			position: relative
-			top: 1px
-		div
-			display: inline-block
-			+s(search)
-	input
-		font-size: 13px 
-	.wdg__location
-		border: 1px solid #E2E2E2 
-		border-radius: 3px
-		position: relative
+.wdg4
+	.wdg
+		border: 1px solid #E1E1E1 
+		color: #000
 		font-size: 13px  
-		color: #2D2D2D
-		margin-bottom: 10px 
-		height: 38px
-		line-height: 40px  
-		.wdg__locationinput
+		font-family: Helvetica,arial, sans-serif
+		&.wdg_xs
+			.wdg__search
+				margin-top: 10px
+		.wdg__content
+			padding: 10px 3% 
+		table
 			border: none
-			height: 38px 
-			line-height: 38px 
-			display: block 
-			padding: 0 10px
-			width: 70%  
-			font-size: 13px 
-		.wdg__locationicon
-			+s(location)
-			position: absolute
-			right: 10px 
-			top: 10px 
-			font-size: 13px 
-	.wdg__rooms
-		height: 38px 
-		border: 1px solid #E2E2E2 
-		border-radius: 3px
-		position: relative
-		font-size: 13px  
-		text-align: right
-		font-size: 0 
-		.wdg__roomslabel
-			height: 38px 
-			line-height: 38px 
-			position: absolute
-			left: 0
-			top: 0
-			font-size: 13px 
-			padding-left: 10px 
-			width: 25%
-			text-align: left
-			overflow: hidden
-			-ms-text-overflow: ellipsis
-			text-overflow: ellipsis 
-		.wdg__roomsitem
-			display: inline-block
-			height: 40px 
-			line-height: 40px
-			position: relative
-			top: -1px 
-			border-left: 1px solid #E6E4E3  
-			width: 29px 
-			font-size: 13px 
-			text-align: center
+			border-spacing: 0
+			border-collapse: collapse 
+			width: 100%
+			td
+				text-align: left
+			.wdg__smalllogotd
+				width: 30px 
+		*
+			margin: 0
+			padding: 0
+		.wdg__header
+			.wdg__smalllogo
+				display: inline-block
+				+s(smalllogo)
+			.wdg__title
+				font-size: 13px
+				color: #000
+				font-weight: bold
+				line-height: 1.2
+				display: block
+				padding-left: 10px
+		.wdg__bottom
+			border-top: 1px solid #E1E1E1
+			padding: 10px 3%
+			font-size: 12px
+			.wdg__get
+				text-decoration: none
+				color: #A3A3A3
+				font-size: 12px
+		.wdg__logo
+			+hidetext
+			+s(logo)
+			display: block
+			float: right
+
+		.wdg__form
+			margin-top: 10px
+		.wdg__row
+			margin-top: 10px
+		.wdg__search
+			margin-top: 20px
+			border: none
+			background: #fc6013
+			width: 100%
+			height: 40px
+			+border-radius(3px)
+			color: #fff
+			text-transform: uppercase
+			outline: 0
 			cursor: pointer
-			&:last-child
-				border-top-right-radius: 3px
-				border-bottom-right-radius: 3px
-			&.is-active
-				color: #fff 
-				background: #FF5E24
-				border-color: #F25720  
-	.wdg__price
-		margin-bottom: 10px 
-		height: 38px 
-		border: 1px solid #E2E2E2 
-		border-radius: 3px
-		position: relative
-		font-size: 13px  
-		.wdg__pricelabel
-			display: inline-block
-			padding-left: 10px 
-			margin-right: 4px 
-		.wdg__priceinput
-			display: inline-block
-			width: 40%
+			+hidetext
+			&:active
+				position: relative
+				top: 1px
+			div
+				display: inline-block
+				+s(search)
+		input
+			font-size: 13px 
+		.wdg__location
+			border: 1px solid #E2E2E2 
+			border-radius: 3px
+			position: relative
 			font-size: 13px  
+			color: #2D2D2D
+			margin-bottom: 10px 
+			height: 38px
+			line-height: 40px  
+			.wdg__locationinput
+				border: none
+				height: 38px 
+				line-height: 38px 
+				display: block 
+				padding: 0 10px
+				width: 70%  
+				font-size: 13px 
+			.wdg__locationicon
+				+s(location)
+				position: absolute
+				right: 10px 
+				top: 10px 
+				font-size: 13px 
+		.wdg__rooms
 			height: 38px 
-			line-height: 38px
-			border-style: none 
-		.wdg__curr
-			position: absolute
-			right: 0
-			top: 0
-			width: 21%  
-			border-left: 1px solid #E2E2E2  
+			border: 1px solid #E2E2E2 
+			border-radius: 3px
+			position: relative
+			font-size: 13px  
+			text-align: right
+			font-size: 0 
+			.wdg__roomslabel
+				height: 38px 
+				line-height: 38px 
+				position: absolute
+				left: 0
+				top: 0
+				font-size: 13px 
+				padding-left: 10px 
+				width: 25%
+				text-align: left
+				overflow: hidden
+				-ms-text-overflow: ellipsis
+				text-overflow: ellipsis 
+			.wdg__roomsitem
+				display: inline-block
+				height: 40px 
+				line-height: 40px
+				position: relative
+				top: -1px 
+				border-left: 1px solid #E6E4E3  
+				width: 29px 
+				font-size: 13px 
+				text-align: center
+				cursor: pointer
+				&:last-child
+					border-top-right-radius: 3px
+					border-bottom-right-radius: 3px
+				&.is-active
+					color: #fff 
+					background: #FF5E24
+					border-color: #F25720  
+		.wdg__price
+			margin-bottom: 10px 
 			height: 38px 
-			.wdg__currvalue
+			border: 1px solid #E2E2E2 
+			border-radius: 3px
+			position: relative
+			font-size: 13px  
+			.wdg__pricelabel
+				display: inline-block
+				padding-left: 10px 
+				margin-right: 4px 
+			.wdg__priceinput
+				display: inline-block
+				width: 40%
+				font-size: 13px  
 				height: 38px 
 				line-height: 38px
-				padding-left: 10px  
-			.wdg__currarr
+				border-style: none 
+			.wdg__curr
+				position: absolute
+				right: 0
+				top: 0
+				width: 21%  
+				border-left: 1px solid #E2E2E2  
+				height: 38px 
+				.wdg__currvalue
+					height: 38px 
+					line-height: 38px
+					padding-left: 10px  
+				.wdg__currarr
+					position: absolute
+					top: 19px 
+					right: 10px 
+					+s(arr)
+				.wdg__currselect
+					position: absolute
+					opacity: 0
+					-webkit-appearance: none
+					top: 0
+					left: 0
+					width: 100%
+					z-index: 2
+					height: 100%  
+		.wdg__type
+			margin-bottom: 10px 
+			height: 38px 
+			border: 1px solid #E2E2E2 
+			border-radius: 3px
+			position: relative
+			font-size: 13px  
+			.wdg__typevalue
+				height: 38px 
+				line-height: 38px
+				padding-left: 10px 
+			.wdg__typearr
 				position: absolute
 				top: 19px 
 				right: 10px 
 				+s(arr)
-			.wdg__currselect
+			.wdg__typeselect
 				position: absolute
 				opacity: 0
 				-webkit-appearance: none
@@ -176,62 +202,37 @@
 				width: 100%
 				z-index: 2
 				height: 100%  
-	.wdg__type
-		margin-bottom: 10px 
-		height: 38px 
-		border: 1px solid #E2E2E2 
-		border-radius: 3px
-		position: relative
-		font-size: 13px  
-		.wdg__typevalue
-			height: 38px 
-			line-height: 38px
-			padding-left: 10px 
-		.wdg__typearr
-			position: absolute
-			top: 19px 
-			right: 10px 
-			+s(arr)
-		.wdg__typeselect
-			position: absolute
-			opacity: 0
-			-webkit-appearance: none
-			top: 0
-			left: 0
-			width: 100%
-			z-index: 2
-			height: 100%  
-	.wdg__sq
-		margin-bottom: 10px 
-		height: 38px 
-		border: 1px solid #E2E2E2 
-		border-radius: 3px
-		position: relative
-		font-size: 13px  
-		text-align: right
-		.wdg__sqlabel1
-			position: absolute
-			left: 10px 
-			top: 0
-			height: 38px  
-			line-height: 38px 
-		.wdg__sqlabel2
-			display: inline-block
-			padding-right: 10px 
-		.wdg__sqinput
-			border-style: none
-			height: 38px
-			line-height: 38px
-			width: 40px      
-			display: inline-block
-			text-align: right
-			padding-right: 5px 
-	&.wdg_xs
-		.wdg__type
-			float: left
-			width: 50% 
-			margin-right: 10px 
 		.wdg__sq
-			overflow: hidden
-			margin-left: 10px 
+			margin-bottom: 10px 
+			height: 38px 
+			border: 1px solid #E2E2E2 
+			border-radius: 3px
+			position: relative
+			font-size: 13px  
+			text-align: right
+			.wdg__sqlabel1
+				position: absolute
+				left: 10px 
+				top: 0
+				height: 38px  
+				line-height: 38px 
+			.wdg__sqlabel2
+				display: inline-block
+				padding-right: 10px 
+			.wdg__sqinput
+				border-style: none
+				height: 38px
+				line-height: 38px
+				width: 40px      
+				display: inline-block
+				text-align: right
+				padding-right: 5px 
+		&.wdg_xs
+			.wdg__type
+				float: left
+				width: 50% 
+				margin-right: 10px 
+			.wdg__sq
+				overflow: hidden
+				margin-left: 10px 
 

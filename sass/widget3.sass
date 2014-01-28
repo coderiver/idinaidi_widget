@@ -1,174 +1,175 @@
 @import lib/base
 
-.wdg
-	border: 1px solid #E1E1E1 
-	color: #000
-	font-size: 13px  
-	font-family: Helvetica,arial, sans-serif
-	&.wdg_xs
-		.wdg__counter
-			display: none
-	&.wdg_vertical
-		.wdg__header
-			.wdg__title
-				float: none
+.wdg3
+	.wdg
+		border: 1px solid #E1E1E1 
+		color: #000
+		font-size: 13px  
+		font-family: Helvetica,arial, sans-serif
+		&.wdg_xs
 			.wdg__counter
-				float: none
-		.wdg__slider
-			padding: 0
-			border-top: none
-		.wdg__slider-inner
-			padding: 26px 8%
-		.wdg__next,.wdg__prev
-			width: 100%
-			height: 26px
-			position: absolute
-			left: 0
-			top: auto
-		.wdg__next
-			bottom: 0
-		.wdg__prev
-			top: 0
-		.wdg__nav-icon
-			+rotate(90)
-		.wdg__item
-			border-top: 1px solid #E1E1E1
-			float: none
-			width: 100%
-			// padding: 10px 3%
-			padding: 10px 0
-			// +box
-			&:first-child
+				display: none
+		&.wdg_vertical
+			.wdg__header
+				.wdg__title
+					float: none
+				.wdg__counter
+					float: none
+			.wdg__slider
+				padding: 0
 				border-top: none
+			.wdg__slider-inner
+				padding: 26px 8%
+			.wdg__next,.wdg__prev
+				width: 100%
+				height: 26px
+				position: absolute
+				left: 0
+				top: auto
+			.wdg__next
+				bottom: 0
+			.wdg__prev
+				top: 0
+			.wdg__nav-icon
+				+rotate(90)
+			.wdg__item
+				border-top: 1px solid #E1E1E1
+				float: none
+				width: 100%
+				// padding: 10px 3%
+				padding: 10px 0
+				// +box
+				&:first-child
+					border-top: none
+			.wdg__pic
+				float: left
+				overflow: hidden
+				width: 100px
+				height: 91px
+				overflow: hidden
+				margin-right: 5%
+				img
+					display: block
+					height: 91px
+					width: auto
+					// height: auto 
+			.wdg__iteminfo
+				overflow: hidden
+				// padding: 0
+				min-width: 155px
+			.wdg__bottom
+				border-top: none
+		.wdg__content
+			padding: 10px 0 0
+		table
+			border: none
+			border-spacing: 0
+			border-collapse: collapse 
+			width: 100%
+			td
+				text-align: left
+				width: 100%
+			.wdg__smalllogotd
+				width: 30px !important
+		*
+			margin: 0
+			padding: 0
+		.wdg__header
+			margin: 0 3%
+			width: auto
+			.wdg__smalllogo
+				display: inline-block
+				+s(smalllogo)
+			.wdg__title
+				font-size: 13px 
+				color: #000
+				font-weight: bold
+				line-height: 1.2  
+				display: block
+				padding-left: 10px 
+				float: left
+			.wdg__counter
+				font-size: 12px
+				color: #000
+				font-weight: normal
+				line-height: 1.2
+				padding-left: 10px
+				float: right
 		.wdg__pic
-			float: left
-			overflow: hidden
-			width: 100px
-			height: 91px
-			overflow: hidden
-			margin-right: 5%
 			img
 				display: block
-				height: 91px
-				width: auto
-				// height: auto 
-		.wdg__iteminfo
-			overflow: hidden
-			// padding: 0
-			min-width: 155px
-		.wdg__bottom
-			border-top: none
-	.wdg__content
-		padding: 10px 0 0
-	table
-		border: none
-		border-spacing: 0
-		border-collapse: collapse 
-		width: 100%
-		td
-			text-align: left
-			width: 100%
-		.wdg__smalllogotd
-			width: 30px !important
-	*
-		margin: 0
-		padding: 0
-	.wdg__header
-		margin: 0 3%
-		width: auto
-		.wdg__smalllogo
-			display: inline-block
-			+s(smalllogo)
-		.wdg__title
-			font-size: 13px 
-			color: #000
-			font-weight: bold
-			line-height: 1.2  
-			display: block
-			padding-left: 10px 
+				//min-height: 91px
+				width: 100%
+				height: auto 
+		.wdg__slider
+			border-top: 1px solid #e1e1e1
+			position: relative
+			margin-top: 8px
+			// +clr
+			//margin-left: -10px
+			padding: 0 26px
+		.wdg__slider-inner
+			+clr
+		.wdg__item
 			float: left
-		.wdg__counter
-			font-size: 12px
-			color: #000
-			font-weight: normal
-			line-height: 1.2
-			padding-left: 10px
-			float: right
-	.wdg__pic
-		img
-			display: block
-			//min-height: 91px
-			width: 100%
-			height: auto 
-	.wdg__slider
-		border-top: 1px solid #e1e1e1
-		position: relative
-		margin-top: 8px
-		// +clr
-		//margin-left: -10px
-		padding: 0 26px
-	.wdg__slider-inner
-		+clr
-	.wdg__item
-		float: left
-		width: 33.3%
-		//padding: 5px 0
-		padding: 10px 3%
-		+box
-	.wdg__iteminfo
-		border-bottom-left-radius: 2px
-		border-bottom-right-radius: 2px
-		padding: 5px 0 0
-	.wdg__address
-		font-size: 13px 
-		color: #FD6537 
-		margin-bottom: 5px 
-	.wdg__more
-		font-size: 12px 
-		color: #000 
-	.wdg__bottom
-		border-top: 1px solid #E1E1E1
-		padding: 10px 3%
-		font-size: 12px  
-		.wdg__get
-			text-decoration: none
-			color: #A3A3A3
+			width: 33.3%
+			//padding: 5px 0
+			padding: 10px 3%
+			+box
+		.wdg__iteminfo
+			border-bottom-left-radius: 2px
+			border-bottom-right-radius: 2px
+			padding: 5px 0 0
+		.wdg__address
+			font-size: 13px 
+			color: #FD6537 
+			margin-bottom: 5px 
+		.wdg__more
+			font-size: 12px 
+			color: #000 
+		.wdg__bottom
+			border-top: 1px solid #E1E1E1
+			padding: 10px 3%
 			font-size: 12px  
-	.wdg__logo
-		+hidetext
-		+s(logo)
-		display: block
-		float: right
-	// .wdg__nav
-	// 	text-align: center
-	// 	margin-top: 10px 
-	// 	height: 15px
-	// 	overflow: hidden
-	.wdg__next,.wdg__prev
-		display: block
-		//vertical-align: middle
-		height: 100%
-		cursor: pointer
-		width: 26px
-		position: absolute
-		top: 0
-		background: #f4f4f4
-		&:hover
-			background: #e6e6e6
-		.wdg__nav-icon
+			.wdg__get
+				text-decoration: none
+				color: #A3A3A3
+				font-size: 12px  
+		.wdg__logo
+			+hidetext
+			+s(logo)
+			display: block
+			float: right
+		// .wdg__nav
+		// 	text-align: center
+		// 	margin-top: 10px 
+		// 	height: 15px
+		// 	overflow: hidden
+		.wdg__next,.wdg__prev
+			display: block
+			//vertical-align: middle
+			height: 100%
+			cursor: pointer
+			width: 26px
 			position: absolute
-			top: 50%
-			left: 50%
-			margin-left: -3px
-			margin-top: -6px
-	.wdg__next
-		right: 0
-		.wdg__nav-icon
-			+s(next)
-	.wdg__prev
-		left: 0
-		.wdg__nav-icon
-			+s(prev)
+			top: 0
+			background: #f4f4f4
+			&:hover
+				background: #e6e6e6
+			.wdg__nav-icon
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-left: -3px
+				margin-top: -6px
+		.wdg__next
+			right: 0
+			.wdg__nav-icon
+				+s(next)
+		.wdg__prev
+			left: 0
+			.wdg__nav-icon
+				+s(prev)
 
 
 

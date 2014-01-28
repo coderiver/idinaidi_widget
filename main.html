@@ -5,78 +5,511 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/idiwdg.css">
+	<link rel="stylesheet" media="screen" href="css/widget1.css">
+	<link rel="stylesheet" media="screen" href="css/widget2.css">
+	<link rel="stylesheet" media="screen" href="css/widget3.css">
+	<link rel="stylesheet" media="screen" href="css/widget4.css">
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
 	<script src="js/common.js"></script>
 </head>
-<body class="landing">
-<!-- BEGIN out -->
-<div class="out">
+<body>
+<!-- BEGIN idiwdg -->
+<div class="idiwdg">
 
-	<!-- BEGIN header -->
-	<header class="header">
-		<div class="header__in">
-			<h1 class="logo"><a href="#">Идинайди</a></h1>
-		</div>
-	</header>
-	<!-- END header -->
-	<!-- BEGIN main -->
-	<div class="main">
-		<!-- BEGIN carousel -->
-		<div class="carousel">
-			<div class="carousel__in">
-				<div class="carousel__heading">
-					<h2 class="carousel__title">Виджеты для вашего сайта</h2>
-					<p class="carousel__description">Про выбранный блок Embedded Posts are a simple way to put public posts - by a Page or a person on Facebook - into the content of your web site or web page. Only public posts from Facebook Pages and profiles can be embedded.</p>
+		<!-- BEGIN idiwdg-header -->
+		<header class="idiwdg-header">
+			<div class="idiwdg-header__in">
+				<h1 class="idiwdg-logo"><a href="#">Идинайди</a></h1>
+			</div>
+		</header>
+		<!-- END idiwdg-header -->
+
+		<!-- BEGIN idiwdg-page -->
+		<div class="idiwdg-page">
+			<!-- BEGIN idiwdg-nav -->
+			<div class="idiwdg-nav">
+				<ul class="idiwdg-nav__list">
+					<li class="idiwdg-nav__item">
+						<a href="#">Галерея объявлений</a>
+					</li>
+					<li class="idiwdg-nav__item">
+						<a href="#">Блок поиска</a>
+					</li>
+					<li class="idiwdg-nav__item">
+						<a href="#">Карта объявлений</a>
+					</li>
+					<li class="idiwdg-nav__item is-active">
+						<a href="#">Карусель объявлений</a>
+					</li>
+				</ul>
+			</div>
+			<!-- END idiwdg-nav -->
+			<!-- BEGIN idiwdg-pager -->
+			<div class="idiwdg-pager">
+				<a href="#" class="idiwdg-pager__prev"></a>
+			</div>
+			<!-- END idiwdg-pager -->
+
+			<!-- BEGIN idiwdg-content -->
+			<div class="idiwdg-content idiwdg-layout">
+				<div class="idiwdg-sidebar idiwdg-l-col1">
+					<div class="idiwdg-widget">
+						<!-- begin widget4  -->
+						<div class="idiwdg-widget__preview wdg4" style="width: 280px;">
+							<div class="wdg wdg_xs">
+								<div class="wdg__content">
+									<table class="wdg__header"><tr><td class="wdg__smalllogotd"><i class="wdg__smalllogo"></i></td><td><span class="wdg__title">Поиск квартиры</span></td></table>
+									<div class="wdg__form">
+										<div class="wdg__row">
+											<div class="wdg__location">
+												<input type="text" value="Москва" class="wdg__locationinput">
+												<div class="wdg__locationicon"></div>
+											</div>
+										</div>
+
+										<div class="wdg__type">
+											<select class="wdg__typeselect"><option value="">Квартира</option></select>
+											<div class="wdg__typevalue">Квартира</div>
+											<div class="wdg__typearr"></div>
+										</div>
+										<div class="wdg__sq">
+											<div class="wdg__sqlabel1">От</div>
+											<input type="text" value="37" class="wdg__sqinput">
+											<div class="wdg__sqlabel2">м<sup>2</sup></div>
+										</div>
+										<div class="wdg__price">
+											<div class="wdg__pricelabel">Цена до</div>
+											<input type="text" value="8000000" class="wdg__priceinput">
+											<div class="wdg__curr">
+												<div class="wdg__currvalue">Р</div>
+												<div class="wdg__currarr"></div>
+												<select name="" id="" class="wdg__currselect"><option value="">Руб.</option></select>
+											</div>
+										</div>
+										<div class="wdg__rooms">
+											<div class="wdg__roomslabel">Комнат</div>
+											<div class="wdg__roomsitem">1</div>
+											<div class="wdg__roomsitem is-active">2</div>
+											<div class="wdg__roomsitem is-active">3</div>
+											<div class="wdg__roomsitem">4+</div>
+										</div>
+										<button type="submit" class="wdg__search"><div></div>Поиск</button>
+									</div>
+								</div>
+								<div class="wdg__bottom">
+									<table class="wdg__bottomtable">
+									<tr class="wdg__gettd"><td><a href="#" class="wdg__get">Получить виджет</a></td>
+									<td class="wdg__logotd"><a href="#" class="wdg__logo">Idinaidi</a></td></tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- end widget4 -->
+					</div>
 				</div>
-				<ul class="carousel__items">
-					<li class="carousel__item">
-						<a class="carousel__hotzone" href="#">
-							<figure class="carousel__item-img">
-								<img src="img/caro1.jpg" alt="img">
+				<div class="idiwdg-main idiwdg-l-col2">
+					<h2 class="idiwdg-main__h">Блок поиска</h2>
+					<div class="idiwdg-main__description">
+						<p>Про выбранный блок Embedded Posts are a simple way to put public posts - by a Page or a person on Facebook - into the content of your web site or web page. Only public posts from Facebook Pages and profiles can be embedded.</p>
+					</div>
+					<!-- BEGIN idiwdg-settings -->
+					<div class="idiwdg-settings">
+						<div class="idiwdg-settings__section">
+							<div class="idiwdg-settings__h">Настройка блока</div>
+							<div class="idiwdg-settings__row">
+								<div class="idiwdg-settings__naming">
+									<input type="text" class="idiwdg-settings__naminginput" value="Заголовок блока">
+								</div>
+								<div class="idiwdg-settings__width idiwdg-settings__width_mod">
+									<span class="idiwdg-settings__widthlabel1">Ширина блока</span>
+									<input type="text" value="340" class="idiwdg-settings__widthinput">
+									<span class="idiwdg-settings__widthlabel2">pixel</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END idiwdg-settings -->
+					<!-- BEGIN idiwdg-main__buttons -->
+					<div class="idiwdg-main__buttons">
+						<a href="#" class="idiwdg-btn">Предпросмотр</a>
+						<a href="#" class="idiwdg-btn">Получить код</a>
+					</div>
+					<!-- END idiwdg-main__buttons -->
+				</div>
+			</div>
+			<!-- END idiwdg-content -->
+
+			<!-- BEGIN idiwdg-content -->
+			<div class="idiwdg-content idiwdg-layout">
+				<div class="idiwdg-sidebar idiwdg-l-col1">
+					<div class="idiwdg-widget">
+						<!-- begin widget2  -->
+						<div class="idiwdg-widget__preview wdg2" style="width: 300px;">
+							<div class="wdg">
+								<div class="wdg__content">
+									<table class="wdg__header"><tr><td class="wdg__smalllogotd"><i class="wdg__smalllogo"></i></td><td><span class="wdg__title">Объявления на карте</span></td></table>
+									<div class="wdg__map">
+										<img src="img/w2.png" alt="">
+									</div>
+								</div>
+								<div class="wdg__bottom">
+									<table class="wdg__bottomtable">
+									<tr class="wdg__gettd"><td><a href="#" class="wdg__get">Получить виджет</a></td>
+									<td class="wdg__logotd"><a href="#" class="wdg__logo">Idinaidi</a></td></tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- end widget2 -->
+					</div>
+				</div>
+				<div class="idiwdg-main idiwdg-l-col2">
+					<h2 class="idiwdg-main__h">Карта объявлений</h2>
+					<div class="idiwdg-main__description">
+						<p>Про выбранный блок Embedded Posts are a simple way to put public posts - by a Page or a person on Facebook - into the content of your web site or web page. Only public posts from Facebook Pages and profiles can be embedded.</p>
+					</div>
+					<!-- BEGIN idiwdg-settings -->
+					<div class="idiwdg-settings">
+						<div class="idiwdg-settings__section">
+							<div class="idiwdg-settings__h">Настройка блока</div>
+							<div class="idiwdg-settings__row">
+								<div class="idiwdg-settings__naming">
+									<input type="text" class="idiwdg-settings__naminginput" value="Заголовок блока">
+								</div>
+								<div class="idiwdg-settings__width idiwdg-settings__width_mod">
+									<span class="idiwdg-settings__widthlabel1">Ширина блока</span>
+									<input type="text" value="340" class="idiwdg-settings__widthinput">
+									<span class="idiwdg-settings__widthlabel2">pixel</span>
+								</div>
+							</div>
+							<div class="idiwdg-settings__row">
+								<div class="idiwdg-settings__location">
+									<input type="text" value="Москва" class="idiwdg-settings__locationinput">
+									<div class="idiwdg-settings__locationicon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END idiwdg-settings -->
+					<!-- BEGIN idiwdg-main__buttons -->
+					<div class="idiwdg-main__buttons">
+						<a href="#" class="idiwdg-btn">Предпросмотр</a>
+						<a href="#" class="idiwdg-btn">Получить код</a>
+					</div>
+					<!-- END idiwdg-main__buttons -->
+				</div>
+			</div>
+			<!-- END idiwdg-content -->
+
+			<!-- BEGIN idiwdg-content -->
+			<div class="idiwdg-content idiwdg-layout">
+				<div class="idiwdg-sidebar idiwdg-l-col1">
+					<div class="idiwdg-widget">
+						<!-- begin widget1  -->
+						<div class="idiwdg-widget__preview wdg1" style="width: 340px;">
+							<div class="wdg">
+								<div class="wdg__content">
+									<table class="wdg__header"><tr><td class="wdg__smalllogotd"><i class="wdg__smalllogo"></i></td><td><span class="wdg__title">Дома на продажу</span></td></table>
+									<div class="wdg__item">
+										<div class="wdg__pic">
+											<img src="img/w1.jpg" alt="">
+										</div>
+										<div class="wdg__iteminfo">
+											<div class="wdg__address">г. Тольятти, ул. 40 лет Победы, д. 48...</div>
+											<div class="wdg__more">7 400 000 Р, 4 комнаты, 200 м2</div>
+										</div>
+									</div>
+									<div class="wdg__nav">
+										<div class="wdg__prev"></div>
+										<div class="wdg__playpause"></div>
+										<div class="wdg__next"></div>
+										<div class="wdg__page">2 из 234 499 объявлений</div>
+									</div>
+								</div>
+								<div class="wdg__bottom">
+									<table class="wdg__bottomtable">
+									<tr class="wdg__gettd"><td><a href="#" class="wdg__get">Получить виджет</a></td>
+									<td class="wdg__logotd"><a href="#" class="wdg__logo">Idinaidi</a></td></tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- end widget1 -->
+					</div>
+				</div>
+				<div class="idiwdg-main idiwdg-l-col2">
+					<h2 class="idiwdg-main__h">Галерея объявлений</h2>
+					<div class="idiwdg-main__description">
+						<p>Про выбранный блок Embedded Posts are a simple way to put public posts - by a Page or a person on Facebook - into the content of your web site or web page. Only public posts from Facebook Pages and profiles can be embedded.</p>
+					</div>
+					<!-- BEGIN idiwdg-settings -->
+					<div class="idiwdg-settings">
+						<div class="idiwdg-settings__section">
+							<div class="idiwdg-settings__h">Показывать объявления</div>
+							<div class="idiwdg-settings__row">
+								<ul class="idiwdg-switch">
+									<li class="idiwdg-switch__item"><a href="#">Все объявления Идинайди</a></li>
+									<li class="idiwdg-switch__item is-active"><a href="#">Только мои объявления</a></li>
+								</ul>
+								<a href="#" class="idiwdg-settings__auth">Войти на сайт</a>
+							</div>
+							<div class="idiwdg-settings__row">
+								<ul class="idiwdg-switch">
+									<li class="idiwdg-switch__item is-active"><a href="#">Продажа</a></li>
+									<li class="idiwdg-switch__item"><a href="#">Аренда</a></li>
+								</ul>
+							</div>
+							<div class="idiwdg-settings__row">
+								<div class="idiwdg-settings__location">
+									<input type="text" value="Москва" class="idiwdg-settings__locationinput">
+									<div class="idiwdg-settings__locationicon"></div>
+								</div>
+								<div class="idiwdg-settings__type">
+									<select class="idiwdg-settings__typeselect"><option value="">Квартира</option></select>
+									<div class="idiwdg-settings__typevalue">Квартира</div>
+									<div class="idiwdg-settings__typearr"></div>
+								</div>
+								<div class="idiwdg-settings__sq">
+									<div class="idiwdg-settings__sqlabel1">От</div>
+									<input type="text" value="37" class="idiwdg-settings__sqinput">
+									<div class="idiwdg-settings__sqlabel2">м<sup>2</sup></div>
+								</div>
+							</div>
+						</div>
+						<div class="idiwdg-settings__section">
+							<div class="idiwdg-settings__h">Настройка блока</div>
+							<div class="idiwdg-settings__row">
+								<div class="idiwdg-settings__naming">
+									<input type="text" class="idiwdg-settings__naminginput" value="Заголовок блока">
+								</div>
+								<div class="idiwdg-settings__slideshow">
+									<div class="idiwdg-settings__slideshowlabel">Слайдшоу</div>
+									<select class="idiwdg-settings__slideshowselect"><option value="">Каждые 5 секунд</option></select>
+									<div class="idiwdg-settings__slideshowvalue">Каждые 5 секунд</div>
+									<div class="idiwdg-settings__slideshowarr"></div>
+								</div>
+							</div>
+							<div class="idiwdg-settings__row">
+								<div class="idiwdg-settings__width">
+									<span class="idiwdg-settings__widthlabel1">Ширина блока</span>
+									<input type="text" value="340" class="idiwdg-settings__widthinput">
+									<span class="idiwdg-settings__widthlabel2">pixel</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END idiwdg-settings -->
+					<!-- BEGIN idiwdg-main__buttons -->
+					<div class="idiwdg-main__buttons">
+						<a href="#" class="idiwdg-btn">Предпросмотр</a>
+						<a href="#" class="idiwdg-btn">Получить код</a>
+					</div>
+					<!-- END idiwdg-main__buttons -->
+				</div>
+			</div>
+			<!-- END idiwdg-content -->
+
+			<!-- BEGIN idiwdg-content -->
+			<div class="idiwdg-content idiwdg-layout">
+				<div class="idiwdg-sidebar idiwdg-l-col1">
+					<div class="idiwdg-widget">
+						<!-- begin widget3 vertical  -->
+						<div class="idiwdg-widget__preview wdg3" style="width: 300px;">
+							<div class="wdg wdg_vertical">
+								<div class="wdg__content">
+									<table class="wdg__header"><tr><td class="wdg__smalllogotd"><i class="wdg__smalllogo"></i></td><td><span class="wdg__title">Дома в аренду</span><span class="wdg__counter">3 из 234 499 объявлений</span></td></table>
+									<div class="wdg__slider">
+										<div class="wdg__prev"><div class="wdg__nav-icon"></div></div>
+										<div class="wdg__slider-inner">
+											<div class="wdg__item">
+												<div class="wdg__pic">
+													<img src="img/w1.jpg" alt="">
+												</div>
+												<div class="wdg__iteminfo">
+													<div class="wdg__address">г. Тольятти, ул. 40 лет Победы, д. 48...</div>
+													<div class="wdg__more">2 комнат 72 площадь, м2 22 000 000 рублей (309 000 руб/метр)</div>
+												</div>
+											</div>
+											<div class="wdg__item">
+												<div class="wdg__pic">
+													<img src="img/w1.jpg" alt="">
+												</div>
+												<div class="wdg__iteminfo">
+													<div class="wdg__address">г. Тольятти, ул. 40 лет Победы, д. 48...</div>
+													<div class="wdg__more">2 комнат 72 площадь, м2 22 000 000 рублей (309 000 руб/метр)</div>
+												</div>
+											</div>
+											<div class="wdg__item">
+												<div class="wdg__pic">
+													<img src="img/w1.jpg" alt="">
+												</div>
+												<div class="wdg__iteminfo">
+													<div class="wdg__address">г. Тольятти, ул. 40 лет Победы, д. 48...</div>
+													<div class="wdg__more">2 комнат 72 площадь, м2 22 000 000 рублей (309 000 руб/метр)</div>
+												</div>
+											</div>
+										</div>
+										<div class="wdg__next"><div class="wdg__nav-icon"></div></div>
+									</div>
+								</div>
+								<div class="wdg__bottom">
+									<table class="wdg__bottomtable">
+									<tr class="wdg__gettd"><td><a href="#" class="wdg__get">Получить виджет</a></td>
+									<td class="wdg__logotd"><a href="#" class="wdg__logo">Idinaidi</a></td></tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- end widget3 vertical -->
+					</div>
+				</div>
+				<div class="idiwdg-main idiwdg-l-col2">
+					<h2 class="idiwdg-main__h">Карусель объявлений</h2>
+					<div class="idiwdg-main__description">
+						<p>Про выбранный блок Embedded Posts are a simple way to put public posts - by a Page or a person on Facebook - into the content of your web site or web page. Only public posts from Facebook Pages and profiles can be embedded.</p>
+					</div>
+					<!-- BEGIN idiwdg-settings -->
+					<div class="idiwdg-settings">
+						<div class="idiwdg-settings__section">
+							<div class="idiwdg-settings__h">Показывать объявления</div>
+							<div class="idiwdg-settings__row">
+								<ul class="idiwdg-switch">
+									<li class="idiwdg-switch__item"><a href="#">Все объявления Идинайди</a></li>
+									<li class="idiwdg-switch__item is-active"><a href="#">Только мои объявления</a></li>
+								</ul>
+								<a href="#" class="idiwdg-settings__auth">Войти на сайт</a>
+							</div>
+							<div class="idiwdg-settings__row">
+								<ul class="idiwdg-switch">
+									<li class="idiwdg-switch__item is-active"><a href="#">Продажа</a></li>
+									<li class="idiwdg-switch__item"><a href="#">Аренда</a></li>
+								</ul>
+							</div>
+							<div class="idiwdg-settings__row">
+								<div class="idiwdg-settings__location">
+									<input type="text" value="Москва" class="idiwdg-settings__locationinput">
+									<div class="idiwdg-settings__locationicon"></div>
+								</div>
+								<div class="idiwdg-settings__type">
+									<select class="idiwdg-settings__typeselect"><option value="">Квартира</option></select>
+									<div class="idiwdg-settings__typevalue">Квартира</div>
+									<div class="idiwdg-settings__typearr"></div>
+								</div>
+								<div class="idiwdg-settings__sq">
+									<div class="idiwdg-settings__sqlabel1">От</div>
+									<input type="text" value="37" class="idiwdg-settings__sqinput">
+									<div class="idiwdg-settings__sqlabel2">м<sup>2</sup></div>
+								</div>
+							</div>
+						</div>
+						<div class="idiwdg-settings__section">
+							<div class="idiwdg-settings__h">Настройка блока</div>
+							<div class="idiwdg-settings__row">
+								<div class="idiwdg-settings__width">
+									<span class="idiwdg-settings__widthlabel1">Ширина блока</span>
+									<input type="text" value="340" class="idiwdg-settings__widthinput">
+									<span class="idiwdg-settings__widthlabel2">pixel</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END idiwdg-settings -->
+					<!-- BEGIN idiwdg-main__buttons -->
+					<div class="idiwdg-main__buttons">
+						<a href="#" class="idiwdg-btn">Предпросмотр</a>
+						<a href="#" class="idiwdg-btn">Получить код</a>
+					</div>
+					<!-- END idiwdg-main__buttons -->
+				</div>
+			</div>
+			<!-- END idiwdg-content -->
+
+		</div>
+		<!-- END idiwdg-page -->
+
+		<!-- BEGIN idiwdg-hero -->
+		<div class="idiwdg-hero">
+			<div class="idiwdg-hero__in">
+				<div class="idiwdg-hero__heading">
+					<h2 class="idiwdg-hero__title">Виджеты для вашего сайта</h2>
+					<p class="idiwdg-hero__description">Про выбранный блок Embedded Posts are a simple way to put public posts - by a Page or a person on Facebook - into the content of your web site or web page. Only public posts from Facebook Pages and profiles can be embedded.</p>
+				</div>
+				<ul class="idiwdg-hero__items">
+					<li class="idiwdg-hero__item">
+						<a class="idiwdg-hero__hotzone" href="#">
+							<figure class="idiwdg-hero__item-img">
+								<img src="img/hero1.jpg" alt="img">
 							</figure>
-							<h3 class="carousel__item-h">Галерея объявлений</h3>
-							<p class="carousel__item-txt">Embedded Posts are a simple way to put public posts</p>
+							<h3 class="idiwdg-hero__item-h">Галерея объявлений</h3>
+							<p class="idiwdg-hero__item-txt">Embedded Posts are a simple way to put public posts</p>
 						</a>
 					</li>
-					<li class="carousel__item">
-						<a class="carousel__hotzone" href="#">
-							<figure class="carousel__item-img">
-								<img src="img/caro2.jpg" alt="img">
+					<li class="idiwdg-hero__item">
+						<a class="idiwdg-hero__hotzone" href="#">
+							<figure class="idiwdg-hero__item-img">
+								<img src="img/hero2.jpg" alt="img">
 							</figure>
-							<h3 class="carousel__item-h">Блок поиска</h3>
-							<p class="carousel__item-txt">Embedded Posts are a simple way to put public posts</p>
+							<h3 class="idiwdg-hero__item-h">Блок поиска</h3>
+							<p class="idiwdg-hero__item-txt">Embedded Posts are a simple way to put public posts</p>
 						</a>
 					</li>
-					<li class="carousel__item">
-						<a class="carousel__hotzone" href="#">
-							<figure class="carousel__item-img">
-								<img src="img/caro3.jpg" alt="img">
+					<li class="idiwdg-hero__item">
+						<a class="idiwdg-hero__hotzone" href="#">
+							<figure class="idiwdg-hero__item-img">
+								<img src="img/hero3.jpg" alt="img">
 							</figure>
-							<h3 class="carousel__item-h">Карта объявлений</h3>
-							<p class="carousel__item-txt">Embedded Posts are a simple way to put public posts</p>
+							<h3 class="idiwdg-hero__item-h">Карта объявлений</h3>
+							<p class="idiwdg-hero__item-txt">Embedded Posts are a simple way to put public posts</p>
 						</a>
 					</li>
-					<li class="carousel__item">
-						<a class="carousel__hotzone" href="#">
-							<figure class="carousel__item-img">
-								<img src="img/caro4.jpg" alt="img">
+					<li class="idiwdg-hero__item">
+						<a class="idiwdg-hero__hotzone" href="#">
+							<figure class="idiwdg-hero__item-img">
+								<img src="img/hero4.jpg" alt="img">
 							</figure>
-							<h3 class="carousel__item-h">Карусель объявлений</h3>
-							<p class="carousel__item-txt">Embedded Posts are a simple way to put public posts</p>
+							<h3 class="idiwdg-hero__item-h">Карусель объявлений</h3>
+							<p class="idiwdg-hero__item-txt">Embedded Posts are a simple way to put public posts</p>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<!-- END carousel -->
-	</div>
-	<!-- END main -->
-
+		<!-- END idiwdg-hero -->
 
 </div>
-<!-- END out -->
+<!-- END idiwdg -->
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
